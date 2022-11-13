@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="./formSchool.php" method="post">
+        <label for="name">Name: </label> <br> 
+        <input type="text" name="name">
+        <br>
+
+        <label for="class">Class: </label> <br>
+        <input type="text" name="class">
+        <br>
+
+        <label for="univerity">University: </label> <br>
+        <input type="text" name="univerity">
+        <br>
+
+        <label for="hobby">Hobby: </label> <br>
+        Music <input type="checkbox" name="hobby[]" value="Music">
+        Sport <input type="checkbox" name="hobby[]" value="Sport">
+        Dance <input type="checkbox" name="hobby[]" value="Dance">
+
+        <br>
+        <button type="submit" value="submit">Click to submit</button>
+        <button type="reset" value="reset">Erase and restart</button>
+    </form>
+</body>
+</html>
