@@ -1,11 +1,16 @@
 <?php
-    include "./Shape.php";
-    include "./Rectangle.php";
-    include "./Triangle.php";
-    include "./Circle.php";
-    include "./Color.php";
+    // include "./Shape.php";
+    // include "./Rectangle.php";
+    // include "./Triangle.php";
+    // include "./Circle.php";
+    // include "./Color.php";
+
+    function __autoload($class) { 
+        include("./".ucfirst($class).".php"); 
+    } 
 
     $myCollection = array();
+
 
     $r = new Rectangle;
     $r->width = 5;
@@ -44,4 +49,6 @@
 
         print("<br>\n");
     }
+
+    Polygon::Hello();
 ?>

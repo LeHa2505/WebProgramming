@@ -4,5 +4,9 @@
     abstract class Polygon extends Shape
     {
         abstract function getNumberOfSides();
+        
+        public static function Hello() {
+            echo "Hello";
+        }
     }
 ?>
