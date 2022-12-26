@@ -22,4 +22,3 @@
         print "Insert into $mydb failed!</font>";
     }
     mysqli_close($connect);
-?>

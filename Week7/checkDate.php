@@ -10,19 +10,12 @@
 
 <?php
     if (array_key_exists("date", $_POST)) {
-
+//kjkjkjjkjk
     $check_month="[0-1][[:digit:]]";
     $check_day="[0-3][[:digit:]]";
     $check_year="2[[:digit:]]{3}";
     
     $date = $_POST["date"];
-    // if (preg_match("/^($check_month)\/($check_day)\/($check_year)$/", $date ))
-    // {
-    //     print "Valid date = $date";
-    //     } else {
-    //     print "Invalid date = $date";
-    //     }
-    // } 
 
     list($month, $day, $year) = explode( "/", $date );
     if ($month=1 || $month=3 || $month=5 || $month=7 || $month=8 || $month=10 || $month=12) {
