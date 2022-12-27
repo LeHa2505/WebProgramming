@@ -1,0 +1,48 @@
+body {
+  margin: 0px;
+  padding: 0px;
+}
+#header {
+  background: red;
+  width: 100%;
+  color: #fff;
+}
+#rightcol {
+  background: yellow;
+  float: right;
+  width: 25%;
+  height: 500px;
+}
+#content {
+  background: #fff;
+  float: left;
+  width: 75%;
+  height: 500px;
+  color: black;
+}
+#footer {
+  background: blue;
+  clear: both;
+  width: 100%;
+  color: #fff;
+}
+
+ul.list-sidebar {
+  padding: 0;
+}
+
+.list-sidebar > li {
+  margin: 0.5rem 0;
+  list-style-type: none;
+}
+
+.list-sidebar > li > a {
+  text-decoration: none;
+  color: black;
+  margin: 1rem 0;
+}
+
+.block {
+  margin-bottom: 10rem;
+  background-color: #fff;
+}
