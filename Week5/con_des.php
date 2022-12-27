@@ -1,3 +1,4 @@
+
 <?php
     class BaseClass {
         protected $name = "BaseClass";
@@ -14,7 +15,9 @@
     class SubClass extends BaseClass {
         function __construct()
         {
-            $this->name = "SubClass";
+         
+         
+           $this->name = "SubClass";
             parent::__construct();
         }
         function __destruct()

@@ -10,7 +10,6 @@
 
 <?php
     if (array_key_exists("date", $_POST)) {
-//kjkjkjjkjk
     $check_month="[0-1][[:digit:]]";
     $check_day="[0-3][[:digit:]]";
     $check_year="2[[:digit:]]{3}";
