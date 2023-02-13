@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      function ajaxResponse() {
+        //This gets called when the readyState changes.
+        if (ajaxRequest.readyState != 4) {
+          //  check to see if we're done
+          return;
+        } else {
+          if (ajaxRequest.status == 200) {
+            //  check to see if successful
+            let timeValue =
+              ajaxRequest.responseXML.getElementsByTagName("timenow")[0];
+            document.getElementById("showtime").innerHTML =
+              timeValue.childNodes[0].nodeValue;
+          } else {
+            alert("Request failed: " + ajaxRequest.statusText);
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,22 +1,23 @@
-<HTML>
-<HEAD><TITLE> Distance from Chicago!</TITLE></HEAD>
-<BODY>
-<FONT SIZE=4 COLOR=BLUE> Welcome to the Distance ca.
-    <br>The page that calculates the distances from Chicago
-<BR> Select a destination:
-<FORM ACTION="CheckDistance.php" METHOD="GET">
-    <SELECT NAME="destination" SIZE=5 MULTIPLE>
-        <OPTION VALUE="Boston"> Boston </OPTION>
-        <OPTION VALUE="Dallas"> Dallas </OPTION>
-        <OPTION VALUE="Miami"> Miami </OPTION>
-        <OPTION VALUE="Nashville"> Nashville </OPTION>
-        <OPTION VALUE="Las Vegas"> Las Vegas </OPTION>
-        <OPTION VALUE="Pittsburgh"> Pittsburgh </OPTION>
-        <OPTION VALUE="San Francisco"> San Francisco </OPTION>
-        <OPTION VALUE="Toronto"> Toronto </OPTION>
-        <OPTION VALUE="Washington, DC"> Washington, DC </OPTION>
-    </SELECT>
-    <BR>
-    <INPUT TYPE ="SUBMIT" VALUE="Submit">
-    <INPUT TYPE ="Reset" VALUE="Reset">
-</FORM></BODY></HTML>
+<!DOCTYPE html>
+    <head><title>Welcome to the Distance Calculation Page</title></head>
+    <body>
+        <h1 style="text-align:center;color:blue;">Welcome to the Distance Calculation Page</h1>
+        <form action="./CheckDistance.php" method="post">
+        <?php
+            print("The page that calculates the distance from Chicago!<br>");
+            print("<select name=\"destination[]\" size=5 multiple>
+                <option> Boston </option>
+                <option> Dallas </option>
+                <option> Las Vegas </option>
+                <option> Miami </option>
+                <option> Nashville </option>
+                <option> Pittsburgh </option>
+                <option> San Francisco </option>
+                <option> Toronto </option>
+                <option> Washington, DC </option>
+            </select>");
+            print("<br><input type=\"submit\" value=\"Send\">");
+        ?>
+        </form>
+    </body>
+</html>
